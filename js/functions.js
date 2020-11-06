@@ -76,7 +76,7 @@ console.log(isTwo(random))
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 function calculateTip(x,y){
-	return x * y
+	return x * y * 0.01
 }
 /**
  * TODO:
@@ -103,5 +103,6 @@ console.log(calculateTip(bill,tip))
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 function applyDiscount (originalPrice,discountPercent){
-	return originalPrice * discountPercent
+	return originalPrice - (originalPrice * discountPercent)
 }
+console.log(applyDiscount(45.99,0.12))
