@@ -9,7 +9,7 @@ showMultiplicationTable(5)
 
 //Exercise 2
 for (var count2 = 1; count2 <= 10; count2++) {
-	var random = Math.floor((Math.random() * 200) + 20);
+	var random = Math.floor((Math.random() * 200 - 20) + 20);
 	if (random % 2 === 0){
 		console.log(random + " is even");
 	} else {
