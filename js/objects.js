@@ -71,7 +71,7 @@
 	 * > console.log(books[0].author.firstName) // "Douglas"
 	 * > console.log(books[0].author.lastName) // "Adams"
 	 */
-	var books= [
+	var books = [
 		{
 			title: "The Lighting Thief", author: {
 				firstName: "Rick",
@@ -97,7 +97,7 @@
 				firstName: "Dave",
 				lastName: "Willmarth"
 			}
-		},
+		}
 	]
 	/**
 	 * TODO:
@@ -127,8 +127,9 @@
 		console.log("Book # " + (i + 1));
 		console.log("Title: " + book.title)
 		console.log("Author: " + book.author.firstName + " " + book.author.lastName)
-		console.log("")
+		console.log("----")
 	})
+
 	/**
 	 * Bonus:
 	 * - Create a function named `createBook` that accepts a title and author
@@ -139,5 +140,23 @@
 	 *   outputs the information described above. Refactor your loop to use your
 	 *   `showBookInfo` function.
 	 */
+	function createBook(title,fName,lName,arr){
+		var newBook = {
+			title: title,
+			author: {
+				firstName: fName,
+				lastName: lName
+			}
+		}
+		arr.push(newBook)
+		return arr
+	}
+	createBook("The Dark Ability", "DK", "Holmberg",books)
 
+	function showBookInfo(book){
+		console.log("Title: " + book.title)
+		console.log("Author: " + book.author.firstName + " " + book.author.lastName)
+		console.log("")
+	}
+	showBookInfo(books[books.length - 1])
 })();
