@@ -27,7 +27,7 @@
 	 * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
 	 */
 	person.sayHello = function (){
-		return "Hello from " + person.firstName + " " + person.lastName + "!"
+		return "Hello from " + this.firstName + " " + this.lastName + "!"
 	}
 	console.log(person.sayHello())
 	/** TODO:
@@ -51,11 +51,11 @@
 	];
 	shoppers.forEach(function (shopper){
 			if (shopper.amount > 200) {
-				console.log("Congratulations " + shopper.name + ", you have earn a 12% discount!");
-				console.log("Your price after discount is: " + (shopper.amount - (shopper.amount * 0.12)))
+				console.log("Congratulations " + shopper.name + "! For spending $" + shopper.amount.toFixed(2) + ", you have earn a 12% discount!");
+				console.log("Your price after discount is: $" + (shopper.amount - (shopper.amount * 0.12)).toFixed(2))
 			} else {
 				console.log("Sorry " + shopper.name + ", you did not earn the 12% discount.")
-				console.log("Your price is: " + shopper.amount)
+				console.log("Your price is: $" + shopper.amount.toFixed(2))
 			}
 			console.log("")
 	})
