@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Register With Us</title>
+	</head>
+	<body>
+		<h2>Registration Form</h2>
+		<form method="GET" action="https://request-inspector.glitch.me/">
+			<!-- When using the "POST" method, the contents of the form are wrapt within the "body" being sent (see line #62) -->
+			<!-- When using the "GET" method, the contents of the form are wrapt within the "query" being requested (see line #76) -->
+			<div>
+				<label for="email">Email</label>
+				<input id="email" name="email" type="email">
+				<br>
+				<label for="password">Password</label>
+				<input id="password" name="password" type="password">
+			</div>
+			<hr>
+			<div>
+				<label for="bio">Bio</label>
+				<br>
+				<textarea id="bio" name="bio" placeholder="About You"></textarea>
+			</div>
+			<hr>
+			<div>
+				<h3>How did you here about us?</h3>
+				<input id="billboard" type="radio" name="advert" value="billboard">
+				<label for="billboard">Billboard</label>
+				<br>
+				<input id="radio advertisement" type="radio" name="advert" value="radio advertisement">
+				<label for="radio advertisement">Radio Advertisement</label>
+				<br>
+				<input id="internet advertisement" type="radio" name="advert" value="internet advertisement">
+				<label for="internet advertisement">Internet Advertisement</label>
+				<br>
+				<input id="other" type="radio" name="advert" value="other">
+				<label for="other">Other</label>
+				<br>
+				<!-- inputs with different name="" tags will all be selectable at once. Only those with separate tags are linked together-->
+			</div>
+			<hr>
+			<div>
+				<h3>Which browser are you using?</h3>
+				<select id="browser" name="browser">
+					<option value="default">Please select your browser</option>
+					<option value="chrome">Google Chrome</option>
+					<option value="safari">Safari</option>
+					<option value="edge">Microsoft Edge</option>
+					<option value="explorer">Internet Explorer</option>
+					<option value="firefox">Firefox</option>
+					<option value="opera">Opera</option>
+				</select>
+			</div>
+			<br>
+			<input type="submit">
+		</form>
+	</body>
+</html>
+
+
+<!--
+Result from "POST"
+{
+"method":"POST",
+"query":{},
+"body":{
+	"email":"example@email.com",
+	"password":"example123",
+	"bio":"Hi, I'm John Doe",
+	"browser":"default"
+	}
+}
+
+
+Result from "GET"
+{
+"method":"GET",
+"query":{
+	"email":"example@email.com",
+	"password":"example123",
+	"bio":"Hi, I'm John Doe",
+	"browser":"default"
+	},
+"body":{}
+}
+-->
