@@ -1,0 +1,25 @@
+.fancy-header {
+	color: blue;
+	text-decoration: underline;
+}
+.header {
+	color: papayawhip;
+	font-family: cursive;
+}
+.div {
+	color: black;
+	font-family: cursive;
+}
+.list {
+	color: white;
+	font-family: "Comic Sans MS";
+}
+.table {
+	color: black;
+	font-family: "Bodoni 72";
+}
+.default {
+	color: purple;
+	background-color: gray;
+	font-family: "Bodoni 72";
+}
