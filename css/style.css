@@ -1,7 +1,10 @@
 .fancy-header {
-	color: skyblue;
+	color: papayawhip;
 	text-decoration: underline;
 	text-align: center;
+}
+.paragraph {
+	color: purple;
 }
 h3 {
 	text-decoration: underline;
@@ -31,14 +34,14 @@ h3 {
 	table-border-color-dark: rosybrown;
 	padding: 30px;
 }
+
 th {
 	padding-bottom: 5px;
 
 }
-td {
+.table td {
 	padding: 10px;
-	border: black;
-	border-style: solid;
+	border: solid black;
 }
 .anchor:link {
 	color: yellow;

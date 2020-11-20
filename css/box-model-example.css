@@ -1,0 +1,16 @@
+body{
+	background-color: aquamarine;
+}
+#outerBox{
+	height: 439px;
+	background-color: #3e8e41;
+	padding: 48px;
+	margin-top: 31px;
+}
+#innererBox{
+	height: calc(100% - 96px);
+	padding: 25px;
+	margin: 0px;
+	background-color: indianred;
+	border: solid 15px lightgreen;
+}
