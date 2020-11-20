@@ -1,5 +1,9 @@
 .fancy-header {
-	color: blue;
+	color: skyblue;
+	text-decoration: underline;
+	text-align: center;
+}
+h3 {
 	text-decoration: underline;
 }
 .header {
@@ -10,16 +14,53 @@
 	color: black;
 	font-family: cursive;
 }
-.list {
+.oList {
 	color: white;
+	list-style: upper-roman;
+	font-family: "Comic Sans MS";
+}
+.uList {
+	color: white;
+	list-style: square;
 	font-family: "Comic Sans MS";
 }
 .table {
 	color: black;
 	font-family: "Bodoni 72";
+	background-color: white;
+	table-border-color-dark: rosybrown;
+	padding: 30px;
+}
+th {
+	padding-bottom: 5px;
+
+}
+td {
+	padding: 10px;
+	border: black;
+	border-style: solid;
+}
+.anchor:link {
+	color: yellow;
+	font-weight: bold;
+	text-decoration: gray;
+}
+.anchor:hover {
+	color: purple;
+	font-weight: bold;
+	text-decoration: gray;
+}
+.anchor:active {
+	color: red;
+	font-weight: bold;
+	text-decoration: gray;
+}
+.anchor:visited {
+	color: deepskyblue;
+	text-decoration: underline;
 }
 .default {
-	color: purple;
+	color: white;
 	background-color: gray;
 	font-family: "Bodoni 72";
 }
