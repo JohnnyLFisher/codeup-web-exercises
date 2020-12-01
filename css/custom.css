@@ -1,0 +1,32 @@
+.color-lg {
+	color: grey;
+}
+.bc {
+	color: grey;
+	border-color: grey;
+}
+.bl {
+	color: white;
+	background: #017CFE;
+}
+
+.jumbotron h1 {
+	text-align: center;
+	background-color: lightgrey;
+	opacity: .5;
+	width: 100%;
+}
+
+.jumbotron {
+	background-image: url("../photos/pizza.png");
+	background-size: cover;
+}
+
+.main-card>.card-header {
+	background: #017CFE;
+	color: white;
+}
+
+.sub-card {
+	margin: 1em;
+}

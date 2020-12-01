@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+.navbar {
+	display: flex;
+	background-color: gray;
+	padding: 12px;
+	justify-content: space-between;
+	box-sizing: border-box;
+	font-size: 12px;
+	font-weight: bold;
+}
+nav a:hover {
+	background: gray;
+}
+.left-content {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-grow: .1;
+}
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+	font-weight: normal;
+	padding: .2em;
+	margin: -35px;
+}
+.right-content {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-grow: .1;
+}
