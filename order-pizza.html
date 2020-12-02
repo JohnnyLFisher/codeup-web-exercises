@@ -26,10 +26,10 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#">Menu</a>
 					</li>
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="Zip code" aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0 bc" type="submit">Search stores near you!</button>
-				</form>
+					<li class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="Zip code" aria-label="Search">
+						<button class="btn btn-outline-success my-2 my-sm-0 bc" type="submit">Search stores near you!</button>
+					</li>
 				</ul>
 				<a href="#">
 					<span class="show-reg-form-signup color-lg" type="submit">
@@ -122,11 +122,11 @@
 						</div>
 					</div>
 					<footer>
-						<div class="input-group mb-3 bl">
-							<div class="input-group-prepend">
-								<button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
-							</div>
-							<input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+						<div class="card-footer bg-light d-flex flex-row-reverse">
+							<button class="btn btn-primary" type="submit">
+								Next step
+								<i class="fas fa-angle-right"></i>
+							</button>
 						</div>
 					</footer>
 				</div>
@@ -143,8 +143,8 @@
 
 
 							<div class="card-body mb-3">
-								<p>How Much?</p>
-								<select class="form-control" name="cheese" id="cheese">
+								<label for="cheese">How Much?
+								</label><select class="form-control" name="cheese" id="cheese">
 									<option value="light">Light</option>
 									<option value="normal">Normal</option>
 									<option value="extra">Extra</option>
@@ -158,7 +158,7 @@
 
 							<span class="list-group-item bg-light" >Sauce</span>
 							<div class="card-body list-group-item">
-								<p>What type?</p>
+								<label for="sauce">What type?</label>
 								<select class="form-control" name="sauce" id="sauce">
 									<option value="tomato">Tomato Sauce</option>
 									<option value="marinara">Marinara sauce</option>
@@ -169,7 +169,7 @@
 							</div>
 
 							<div class="card-body">
-								<p>How Much?</p>
+								<label for="sauceAmount">How Much?</label>
 								<select class="form-control" name="sauceAmount" id="sauceAmount">
 									<option value="light">Light</option>
 									<option value="normal">Normal</option>
@@ -179,19 +179,18 @@
 
 						</div>
 
-						<div class="card-footer bg-light d-flex flex-row-reverse">
-							<div>
-								<button class="btn btn-primary" type="submit" >
-									<i class="fas fa-angle-left"></i>
-									Previous step
-								</button>
-								<button class="btn btn-primary" type="submit" >
+						<footer>
+							<div class="card-footer bg-light d-flex flex-row-reverse">
+								<button class="btn btn-primary" type="submit">
 									Next step
 									<i class="fas fa-angle-right"></i>
 								</button>
+								<button class="btn btn-primary" type="submit">
+									<i class="fas fa-angle-left"></i>
+									Previous step
+								</button>
 							</div>
-
-						</div>
+						</footer>
 					</div>
 
 				</div>
@@ -271,11 +270,11 @@
 						</div>
 
 						<footer>
-							<div class="input-group mb-3 bl">
-								<div class="input-group-prepend">
-									<button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-								</div>
-								<input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+							<div class="card-footer bg-light d-flex flex-row-reverse">
+								<button class="btn btn-primary" type="submit">
+									<i class="fas fa-angle-left"></i>
+									Previous step
+								</button>
 							</div>
 						</footer>
 					</div>
