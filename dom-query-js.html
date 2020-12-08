@@ -33,6 +33,7 @@
 </p>
 <button id="btn5">5</button>
 
+<button id="btn-all">All at once</button>
 <script>
 	(function() {
 		"use strict";
@@ -80,6 +81,25 @@
 			subParagraphs[0].innerText = "Mission Accomplished!";
 		})
 
+
+		document.getElementById("btn-all").addEventListener('click', function (){
+			//Action 1
+			mainHeader.innerHTML = "JavaScript is Cool";
+			//Action 4
+			subHeader.style["color"] = "blue";
+			//Action 2
+			var i = 0;
+			while (i < listItems.length) {
+				if (i % 2 !== 0){
+					listItems[i].style["color"] = "grey";
+				}
+				i++;
+			}
+			//Action 3
+			listItems[0].style["color"] = "blue"
+			//Action 5
+			subParagraphs[0].innerText = "Mission Accomplished!";
+		})
 	})();
 </script>
 </body>
