@@ -135,4 +135,3 @@ document.getElementById('searchbtn').addEventListener('click', function () {
 // TODO TOGETHER: Reverse Geocoding: Using the reverse geocoding method, enter the coordinates {lng: -98.4861, lat: 29.4260} to get a physical address for the alamo
 
 // TODO: Reverse geocode coordinates of your choice using the reverse geocode method
-

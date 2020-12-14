@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mapbox Exercise</title>
+	<!-- Mapbox CSS -->
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+
+	<!-- Custom CSS -->
+	<link 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 	rel="stylesheet" 	integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 	crossorigin="anonymous">
+	<style>
+		#map {
+			/* the width and height may be set to any size */
+			width: 100%;
+			height: 500px;
+		}
+		.popup-content .mapboxgl-popup-content {
+			background: grey;
+		}
+		.popup-tip .mapboxgl-popup-tip {
+			border-top-color: grey;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>Resturant Mapbox</h1>
+</div>
+
+<div class="container">
+	<div class="row my-3">
+		<div class="col">
+			<button type="button" class="btn btn-primary w-100" id="search-button">Search</button>
+		</div>
+		<div class="col">
+			<button type="button" class="btn btn-primary w-100" id="reset-button">Reset</button>
+		</div>
+
+		<div class="col">
+			<select class="form-select" id="zoom-select">
+				<option selected disabled>Zoom Level</option>
+				<option value="5">Zoom Level 5</option>
+				<option value="10">Zoom Level 10</option>
+				<option value="15">Zoom Level 15</option>
+				<option value="20">Zoom Level 20</option>
+			</select>
+		</div>
+
+		<div class="col">
+			<select class="form-select" id="style-select">
+				<option selected disabled>Map Style</option>
+				<option value="streets-v11">Street</option>
+				<option value="dark-v10">Dark</option>
+				<option value="satellite-v9">Satellite</option>
+			</select>
+		</div>
+
+	</div>
+</div>
+
+<!-- The HTML element that serves as the Mapbox container -->
+<div id='map'></div>
+
+<!-- Mapbox JS -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+
+<!-- Custom JS -->
+<script src="js/mapbox_maps_api.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</body>
+</html>
