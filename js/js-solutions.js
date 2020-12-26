@@ -44,13 +44,13 @@ function isNot(boolean){
 	if (boolean == null){
 		return false
 	} else {
-		return !(boolean)
+		return !boolean
 	}
 }
 
 // * calcAbs
 function calcAbs(num) {
-	if (typeof (num) !== "number") {
+	if (typeof num !== "number") {
 		return 0
 	} else {
 		return Math.abs(num)
@@ -59,21 +59,23 @@ function calcAbs(num) {
 
 // * calcCube
 function calcCube (num){
-	if (typeof (num) !== "number") {
+	if (typeof num !== "number") {
 		return 0
 	} else {
-		return Math.pow(num,3)
+		return Math.pow(num, 3)
 	}
 }
 
 // * isTypeMatch
 function isTypeMatch(type1,type2){
-	return typeof (type1) === typeof (type2)
+	return typeof type1 === typeof type2
 }
 
 // * findLongestString
 function findLongestString (string1,string2) {
-	if (typeof string1 !== "string" && typeof string2 !== "string"){
+	if (string1 === 0) {
+		return null
+	} else if (typeof string1 !== "string" && typeof string2 !== "string"){
 		return ""
 	} else if (typeof string1 === "string" && typeof string2 !== "string"){
 		return string1
@@ -81,11 +83,14 @@ function findLongestString (string1,string2) {
 		return string2
 	} else if (string1.length > string2.length) {
 		return string1
-	} else
+	} else if ( string1.length < string2.length) {
 		return string2
+	} else {
+		alert("How on Earth did you get this message to display???")
+	}
 }
 
 // * isFactor
 function isFactor(num1,num2){
-	return ((parseFloat(num2) % parseFloat(num1)) === 0)
+	return parseFloat(num2) % parseFloat(num1) === 0
 }
