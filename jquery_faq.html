@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Park FAQs</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<style>
+		.invisible {visibility: hidden}
+		body {padding: 20px}
+	</style>
+
+</head>
+<body>
+
+<p>FAQs about National Parks</p>
+
+<dl>
+	<dt>1) Who is the director of the National Park Service?</dt>
+	<dd class="invisible">Margaret Everson, Counselor to the Secretary, is exercising the delegated authority of the Director of the National Park Service.</dd>
+<hr>
+	<dt>2) What government agency oversees the National Park Service?</dt>
+	<dd class="invisible">The National Park Service is a bureau of the Department of the Interior. Directly overseeing its operation is the department's Assistant Secretary for Fish, Wildlife and Parks.</dd>
+<hr>
+	<dt>3) How many employees are in the National Park Service?</dt>
+	<dd class="invisible">
+		<ul>
+			<li>Permanent, temporary, and seasonal employees: Approximately 20,000</li>
+			<li>Volunteers: More than 279,000 in 2019</li>
+		</ul>
+	</dd>
+<hr>
+	<dt>4) How old is the National Park System?</dt>
+	<dd class="invisible">The National Park Service was created by an act signed by President Woodrow Wilson on August 25, 1916. Yellowstone National Park was established by an act signed by President Ulysses S. Grant on March 1, 1872, as the nation's first national park. View the National Park System timeline.</dd>
+<hr>
+	<dt>5) What is the origin of the National Park Service arrowhead?</dt>
+	<dd class="invisible">The arrowhead was authorized as the official National Park Service emblem by the Secretary of the Interior on July 20, 1951. The components of the arrowhead may have been inspired by key attributes of the National Park System, with the sequoia tree and bison representing vegetation and wildlife, the mountains and water representing scenic and recreational values, and the arrowhead itself representing historical and archeological values. Read more about the history of the arrowhead and other elements of NPS visual design.
+		The NPS allows limited use of the NPS arrowhead when doing so contributes to our work. Learn how to request permission to use the arrowhead.</dd>
+<hr>
+	<dt>6) How many areas are in the National Park System?</dt>
+	<dd class="invisible">The system includes 423 areas covering more than 85 million acres in every state, the District of Columbia, American Samoa, Guam, Puerto Rico, and the Virgin Islands. These areas include national parks, monuments, battlefields, military parks, historical parks, historic sites, lakeshores, seashores, recreation areas, scenic rivers and trails, and the White House. Learn more about national park designations. See the complete list of National Park Service units and related areas by type and number.
+	</dd>
+<hr>
+	<dt>7) What is the largest national park site? Smallest?</dt>
+	<dd class="invisible">
+		<ul>
+			<li>Largest: Wrangell-St. Elias National Park and Preserve, AK, at 13.2 million acres</li>
+			<li>Smallest: Thaddeus Kosciuszko National Memorial, PA, at 0.02 acres</li>
+		</ul>
+	</dd>
+<hr>
+	<dt>8) How many people visit the national parks?</dt>
+	<dd class="invisible">Total recreation visitors to the national parks in 2019: 327,516,619.</dd>
+<hr>
+	<dt>9) What is the most-visited national park?</dt>
+	<dd class="invisible">Golden Gate National Recreation Area</dd>
+<hr>
+	<dt>10) What is the National Park Service budget?</dt>
+	<dd class="invisible">
+		<ul>
+			<li>Fiscal Year (FY) 2014 Enacted: $2.98 billion</li>
+			<li>FY 2015 Enacted: $2.615 billion</li>
+			<li>FY 2016 Enacted:$2.851 billion</li>
+			<li>FY 2017 Enacted: $2.932 billion</li>
+		</ul>
+	</dd>
+</dl>
+<button id="btn" type="button" class="btn btn-default">Show Hidden</button>
+
+<script src="js/jquery-2.x-git.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+	$("#btn").click(function () {
+		$("dd").toggleClass("invisible");
+	});
+	$("dt").click(function (){
+		$(this).css("background", "yellow")
+	})
+</script>
+</body>
+</html>
