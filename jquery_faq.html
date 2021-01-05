@@ -8,13 +8,16 @@
 		body {padding: 20px}
 		.invisible {visibility: hidden}
 		.highlighted {background: yellow}
+		.bold { font-weight: bolder }
+		.blue { color: lightskyblue }
 	</style>
 
 </head>
 <body>
 
-<p>FAQs about National Parks</p>
+<h1>FAQs about National Parks</h1>
 
+<button id="btn" type="button" class="btn btn-default">Show Hidden</button>
 <dl>
 	<dt>1) Who is the director of the National Park Service?</dt>
 	<dd>Margaret Everson, Counselor to the Secretary, is exercising the delegated authority of the Director of the National Park Service.</dd>
@@ -65,7 +68,33 @@
 		</ul>
 	</dd>
 </dl>
-<button id="btn" type="button" class="btn btn-default">Show Hidden</button>
+
+<hr>
+
+<h2>Cool Parks</h2>
+
+<h3>Golden Gate National Recreation Area</h3>
+<ul>
+	<li>15 million visits in 2019</li>
+	<li>Area of 82,027 acres</li>
+	<li>Located in California</li>
+</ul>
+
+<h3>Great Smoky Mountains National Park</h3>
+<ul>
+	<li>12.5 million visits in 2019</li>
+	<li>Area of 522,419 acres</li>
+	<li>Located in North Carolina</li>
+</ul>
+
+<h3>Great Smoky Mountains National Park</h3>
+<ul>
+	<li>4.7 million recreational visits in 2019</li>
+	<li>Area of 265,461 acres</li>
+	<li>Located in Colorado</li>
+</ul>
+
+<button id="btn2">GO</button>
 
 <script src="js/jquery-2.x-git.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -80,6 +109,21 @@
 	$("dt").click(function (){
 		$(this).toggleClass("highlighted")
 	});
+
+	$("#btn2").click(function (){
+		$("ul").each(function(){
+			$(this).children().last().addClass("highlighted");
+		});
+	});
+
+	$("h3").click(function(){
+		$(this).next().children("li").addClass("bold");
+	});
+
+	$("li").click(function(){
+		$(this).parent().children().first().addClass("blue");
+	});
+
 </script>
 </body>
 </html>
