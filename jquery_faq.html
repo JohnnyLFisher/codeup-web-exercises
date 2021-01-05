@@ -7,6 +7,7 @@
 	<style>
 		body {padding: 20px}
 		.invisible {visibility: hidden}
+		.hidden {display: none}
 		.highlighted {background: yellow}
 		.bold { font-weight: bolder }
 		.blue { color: lightskyblue }
@@ -14,6 +15,11 @@
 
 </head>
 <body>
+
+<div id="prompt">
+	<span id="close_prompt" style="float: left">X</span>
+	<h1>Would you like to sign up for our newsletter?</h1>
+</div>
 
 <h1>FAQs about National Parks</h1>
 
@@ -96,6 +102,8 @@
 
 <button id="btn2">GO</button>
 
+<h2 id="delayed_prompt">Please register for  further access to this website.</h2>
+
 <script src="js/jquery-2.x-git.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script>
@@ -111,18 +119,31 @@
 	});
 
 	$("#btn2").click(function (){
-		$("ul").each(function(){
+		$("h3").next().each(function(){
+			// noinspection JSUnresolvedFunction
 			$(this).children().last().addClass("highlighted");
 		});
 	});
 
+	// noinspection JSJQueryEfficiency
+	$("h3").next().hide()
+	// noinspection JSJQueryEfficiency
 	$("h3").click(function(){
 		$(this).next().children("li").addClass("bold");
+		$(this).next().slideToggle(500)
+
 	});
 
 	$("li").click(function(){
 		$(this).parent().children().first().addClass("blue");
+
 	});
+
+	$("#close_prompt").click(function () {
+		$("#prompt").addClass("hidden");
+	});
+
+	$("#delayed_prompt").hide().delay(8000).fadeIn(500)
 
 </script>
 </body>
