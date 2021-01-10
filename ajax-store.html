@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Online Store</title>
+</head>
+<body>
+
+<h1>My Tool Store</h1>
+
+<table id="products">
+	<thead>
+	<tr>
+		<th>Title</th>
+		<th>Quantity</th>
+		<th>Price</th>
+		<th>Categories</th>
+	</tr>
+	</thead>
+	<tbody id="insertProducts"></tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script>
+	(function() {
+		"use strict";
+		// TODO: Create an AJAX GET request for the file under data/inventory.json
+		$.ajax("data/inventory.json").done(function(data, status) {
+			alert("AJAX call completed successfully!");
+			console.log("Request status: " + status);
+			console.log("Data returned from server:");
+			console.log(data);
+		}).fail(function (errodr, status ) {
+			alert("There was an error! Check the console for details");
+			console.log("Response status: " + status);
+			console.log("Error object: " + error);
+		});
+		// TODO: Take the data from inventory.json and append it to the products table
+		$.ajax("data/inventory.json").done(function(data) {
+			console.log(data)
+			data.forEach(function(tool){
+				console.log(tool)
+				$("#insertProducts").append(
+					"<tr>" +
+					"<th>" + tool.title + "</th>" +
+					"<th>" + tool.quantity + "</th>" +
+					"<th>" + tool.price + "</th>" +
+					"<th>" + tool.categories.join(", ") + "</th>" +
+					"</tr>"
+				)
+			});
+		});
+	})();
+</script>
+
+</body>
+</html>
