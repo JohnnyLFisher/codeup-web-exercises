@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weather Map Project</title>
+	<link rel="stylesheet" href="css/weather_map.css">
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- Search Bar -->
+<div class="head form-group">
+	<input type="text" id="search" class="form-control">
+	<button>Search</button>
+</div>
+
+<!-- Today's Weather -->
+<div id="today"></div>
+
+<!-- The Map -->
+<div id="map" class="container"></div>
+
+<!-- Weather Info -->
+<div id="data" class="row"></div>
+
+
+<!-- Various Scripts -->
+<script src="js/jquery-2.x-git.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+<script src="keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script src="js/weather_map.js"></script>
+<script src="https://kit.fontawesome.com/10517977d2.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
