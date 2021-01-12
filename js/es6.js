@@ -30,7 +30,7 @@ const users = [
 ];
 
 // TODO: fill in your name and email and add some programming languages you know
-// to the languages array
+//		 to the languages array
 users[5] = {
 	name: 'Johnny',
 	email: 'johnny.luel.fisher@gmail.com',
@@ -39,7 +39,7 @@ users[5] = {
 
 
 // TODO: replace the `var` keyword with `const`, then try to reassign a variable
-// declared as `const`
+//		 declared as `const`
 const name = 'your_name_here';
 const email = 'example_email@codeup.com';
 const languages = [];
@@ -72,7 +72,9 @@ users.forEach(function(user) {
 	const {name, email, languages} = user
 
 	// TODO: rewrite the assignment below to use template strings
-	developers.push(`${name.charAt(0).toUpperCase() + name.slice(1)}'s email is ${email}. ${name.charAt(0).toUpperCase() + name.slice(1)} knows: ${languages.join(', ')}`);
+	developers.push(
+		`${name.charAt(0).toUpperCase() + name.slice(1)}'s email is ${email} and
+		${name.charAt(0).toUpperCase() + name.slice(1)} knows: ${languages.join(', ')}`);
 });
 
 // TODO: Use `let` for the following variable
