@@ -62,8 +62,7 @@ users.forEach(function(user) {
 
 	// TODO: rewrite the assignment below to use template strings
 	developers.push(
-		`${name.charAt(0).toUpperCase() + name.slice(1)}'s email is ${email} and
-		${name.charAt(0).toUpperCase() + name.slice(1)} knows: ${languages.join(', ')}`);
+		`${name.charAt(0).toUpperCase() + name.slice(1)}'s email is ${email} and ${name.charAt(0).toUpperCase() + name.slice(1)} knows: ${languages.join(', ')}`);
 });
 
 // TODO: Use `let` for the following variable
